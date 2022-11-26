@@ -4,16 +4,43 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>TomAtomic Travel</title>
   </head>
   <body>
     <header>
       <nav></nav>
-      <aside id="tabBar"></aside>
     </header>
-    <main>
-      <section id="home"></section>
-      <section id="recommendations"></section>
+    <aside id="tabBar"></aside>
+    <main class="w-full h-screen">
+      <section id="home">
+        <div class="w-full h-3/4">
+
+          <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+            <input type="search" name="" id="" class="p-3 rounded-full text-center shadow-sm" placeholder="San Francisco">
+            <button class="w-36 bg-white rounded-full shadow-sm text-xl text-primary font-semibold p-4">
+              Explorar
+            </button>
+          </div>
+          <div class="w-full h-full">
+            <img src="/assets/img/sanFrancisco.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="p-20" id="recommendations">
+        <div class="w-48 h-64 shadow-md rounded-lg">
+          <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+          <div class="w-full h-2/5 bg-secondary rounded-b-lg py-2 px-4">
+            <p class="text-white font-bold text-xl">Norway</p>
+            <p class="text-white text-md">Beautiful landscapes</p>
+          </div>
+        </div>
+      </section>
+
       <section id="featured_rentals"></section>
     </main>
     <script type="module" src="./src/index.js"></script>
