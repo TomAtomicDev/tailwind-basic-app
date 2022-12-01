@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .RecomCard {
+      @apply w-48 h-64 shadow-md rounded-lg flex-none;
+    }
+
+    .RecomCard div:first-child {
+        @apply w-full h-3/5 rounded-t-lg bg-cover;
+    }
+
+    .RecomCard div:nth-child(2){
+        @apply w-full h-2/5 rounded-b-lg py-2 px-4;
+    }
+  }

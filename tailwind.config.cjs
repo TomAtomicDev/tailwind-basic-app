@@ -14,6 +14,11 @@ module.exports = {
     fontFamily: {
       Montserrat: ["Montserrat", "sans-serif"],
     },
+    ringColor: {
+      primary: "#CC2D4A",
+      secondary: "#8FA206",
+      tertiary: "#61AEC9",
+    },
     extend: {
       backgroundImage: {
         sanFrancisco: "url('/assets/img/sanFrancisco.jpg')",
