@@ -5,6 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -15,7 +23,7 @@
       <nav></nav>
     </header>
     <aside id="tabBar"></aside>
-    <main class="w-full h-screen">
+    <main class="w-full">
       <section id="home">
         <div class="w-full h-3/4">
 
@@ -31,9 +39,9 @@
         </div>
       </section>
 
-      <section class="p-6" id="recommendations">
-        <h3 class="text-3xl font-semibold text-primary">Recomendations</h3>
-        <div class="w-auto h-72 flex items-center mt-6 overflow-x-auto space-x-4 overflow-y-hidden">
+      <section class="m-6" id="recommendations">
+        <h3 class="text-3xl font-semibold text-primary mb-4">Recomendations</h3>
+        <div class="w-auto h-72 flex items-center overflow-x-auto space-x-4 overflow-y-hidden">
 
           <div class="RecomCard">
             <div class="bg-norway"></div>
@@ -86,8 +94,73 @@
         </div> 
       </section>
       
-      <section id="featured_rentals"></section>
+      <section class="m-6" id="featured_rentals">
+        <h3 class="text-3xl font-semibold mb-4 text-primary">Featured rents</h3>
+        <div class="w-full h-full flex flex-col space-y-6 items-center justify-center">
+          <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+            <h4 class="text-3xl px-8 mt-4 font-semibold text-white">Chicago</h4>
+            <p class="text-sm pl-8 text-black mr-24">2 rooms, bathroom and kitchen.</p>
+          </div>
+          <div class="w-full h-96 bg-LA bg-cover rounded-xl">
+            <h4 class="text-3xl px-8 mt-4 font-semibold text-white">Los Angeles</h4>
+            <p class="text-sm pl-8 text-white mr-24">4 rooms, 3 bathrooms, kitchen and private pool.</p>
+          </div>
+          <div class="w-full h-96 bg-miami bg-cover rounded-xl">
+            <h4 class="text-3xl px-8 mt-4 font-semibold text-white">Miami</h4>
+            <p class="text-sm pl-8 text-black mr-24">3 rooms, 2 bathrooms, kitchen and an amazing view to the sea.</p>
+          </div>
+                    <div class="w-full h-96 bg-bali bg-cover rounded-xl">
+            <h4 class="text-3xl px-8 mt-4 font-semibold text-white">Bali</h4>
+            <p class="text-sm pl-8 text-white mr-24">2 rooms, 2 bathrooms, kitchen and a private pool.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="m-6" id="faqs">
+        <h3 class="text-3xl font-semibold mb-4 text-primary">FAQs</h3>
+        <div class="flex flex-col space-y-4">
+          <div>
+            <p class="text-xl font-medium text-primary">Cancelation Politics</p>
+            <p class="text-base pt-2 ">
+              For stays of a week or less, it is important to notify 3 days in advance. In other case, a fine will be charged.
+            </p>
+          </div>
+          <div>
+            <p class="text-xl font-medium text-primary">Payment methods</p>
+            <p class="text-base pt-2">
+              We accept: VISA, MasterCard, American Express, PayPal and Binance.
+            </p>
+          </div>
+          <div>
+            <p class="text-xl font-medium text-primary">Pets</p>
+            <p class="text-base pt-2">
+              Politics about dogs, cats and other pets will be up to the host.
+            </p>
+          </div>
+          <div>
+            <p class="text-xl font-medium text-primary">Security information</p>
+            <p class="text-base pt-2">
+              Every of our stays are covered by insurance.
+            </p>
+          </div> 
+          <div>
+            <p class="text-xl font-medium text-primary">Long stays</p>
+            <p class="text-base pt-2">
+              We count with stays up to 3 months. In that case, a down payment of 50% of the total rent will be required.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="m-6 h-auto bg-gray-100 space-y-2 text-gray-300">
+      <h4 class="text-lg font-bold text-gray-300">About</h4>
+      <p class="text-sm">Investors</p>
+      <p class="text-sm text-gray-300">Jobs</p>
+      <p class="text-sm">Terms and conditions</p>
+      <p class="text-sm">Follow us</p>
+      <i class="fa-brands fa-twitter text-cyan-400"></i>
+      <i class="fa-brands fa-instagram text-purple-400"></i>
+    </footer>
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>
