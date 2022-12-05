@@ -10,6 +10,7 @@ module.exports = {
       tertiary: "#61AEC9",
       black: "#000",
       white: "#fff",
+      ...colors,
     },
     fontFamily: {
       Montserrat: ["Montserrat", "sans-serif"],
