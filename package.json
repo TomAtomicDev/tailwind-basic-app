@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview src"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
@@ -18,5 +18,8 @@
   "keywords": [],
   "author": "Tomas_Penaloza_Aviles <tomatomic.dev@gmail.com> (https://tomatomic.dev/)",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "tailwind-scrollbar-hide": "^1.1.7"
+  }
 }
